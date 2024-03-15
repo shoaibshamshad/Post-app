@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook post clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="main-div">
+        <div class="main-container">
+            <div class="main-heading">
+                <h2>Create post</h2>
+            </div>
+            <div class="image-logo-container">
+                <div class="image-logo">
+                    <img src="./image/IMG_20230728_145620.jpg" alt="">
+                </div>
+                <div class="name-container">
+                    <div class="name">
+                        <h3> Shoaib Shamshad</h3>
+                    </div>
+                    <div class="friends">
+                        <button>Friends</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text" >
+                <textarea id="postBackground" class="post-text" name="" id="" cols="30" rows="10" placeholder="What's on your mind?">
+
+            </textarea>
+            </div>
+            <div class="text-container">
+                <ul>
+                    <!-- <li>Aa</li> -->
+                    <!-- <input type="range">18</input> -->
+                    <li onclick="changeStyle()"><b>B</b></li>
+                    <li><i onclick="changeStyle()">I</i></li>
+                    <li><b onclick="changeStyle()"><u>U</u></b></li>
+                </ul>
+
+            </div>
+            <div class="background-image">
+                <ul>
+                    <li class="color-input"><input type="color" onchange="changeColor()"></li>
+                    <li class="color-input"><img onclick="setBackground()" src="./image/downlo.jpeg" alt=""></li>
+                    <li class="color-input"><img onclick="setBackground()" src="./image/downl.jpeg" alt=""></li>
+                    <li class="color-input"><img onclick="setBackground()" src="./image/download.jpeg" alt=""></li>
+                    <li class="color-input"><img onclick="setBackground()" src="./image/images.jpeg" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h4>
+                    Post
+                </h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
